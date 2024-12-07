@@ -24,6 +24,30 @@ As specified in [ZMQ implementation](https://github.com/pebbe/zmq4?tab=readme-ov
 
 Check the original [0MQ documentation](https://zeromq.org/download/) and the [libzmq](https://github.com/zeromq/libzmq) repository.
 
+#### TL;DR - Ubuntu
+
+On Ubuntu-like systems, run the following:
+
+```bash
+sudo apt install pkg-config libczmq-dev
+```
+
+You should now be able to check the installation:
+
+```bash
+$> pkg-config --modversion libzmq
+4.3.4
+
+$> apt list --installed | grep zmq
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+libczmq-dev/jammy,now 4.2.1-1 amd64 [installed]
+libczmq4/jammy,now 4.2.1-1 amd64 [installed,automatic]
+libzmq3-dev/jammy,now 4.3.4-2 amd64 [installed,automatic]
+libzmq5/jammy,now 4.3.4-2 amd64 [installed,automatic]
+```
+
 ### Install
 
 To install Gopherate, use `go get`:
