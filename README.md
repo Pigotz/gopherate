@@ -16,6 +16,16 @@ Gopherate is a framework for building distributed systems using ZeroMQ. It provi
 
 ## Installation
 
+### Prerequisites
+
+As specified in [ZMQ implementation](https://github.com/pebbe/zmq4?tab=readme-ov-file#requirements) this package depends on:
+
+> zmq4 is just a wrapper for the ZeroMQ library. It doesn't include the library itself.
+
+Check the original [0MQ documentation](https://zeromq.org/download/) and the [libzmq](https://github.com/zeromq/libzmq) repository.
+
+### Install
+
 To install Gopherate, use `go get`:
 
 ```bash
