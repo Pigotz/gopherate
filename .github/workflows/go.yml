@@ -17,6 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Install libczmq-dev
+      run: sudo apt-get install libczmq-dev
+    
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
